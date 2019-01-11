@@ -1,0 +1,97 @@
+
+<script>
+  function increaseIconSize(e){ 
+      let c = e.childNodes;
+      c[0].style = 'width: 80px;';         
+  }
+  function decreaseIconSize(e){ 
+      let c = e.childNodes;
+      c[0].style = 'width: 70px;';         
+  }
+</script><!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+  <body>
+    <header> 
+      <h1 class="pageTitle">Email List Template</h1>
+      <button class="btn">Sign In</button>
+    </header>
+    <section class="signUpSection">
+      <h2>Build your own landing page and generate more leads!</h2>
+      <div class="inputSection">      
+        <input type="email" placeholder="Enter your email...">
+        <button class="btn">Sign Up!</button>
+      </div>
+    </section>
+    <section>
+      <div class="featureOverview" onmouseover="increaseIconSize(this)" onmouseout="decreaseIconSize(this)"><img src="../assets/mobile-app.png" alt="image of a phone"/>
+        <h2>Fully Responsive</h2>
+        <p>This template will look great on any screen!</p>
+      </div>
+      <div class="featureOverview" onmouseover="increaseIconSize(this)" onmouseout="decreaseIconSize(this)"><img src="../assets/checklist.png" alt=""/>
+        <h2>Modern CSS</h2>
+        <p>Built with the new CSS flexbox!</p>
+      </div>
+      <div class="featureOverview" onmouseover="increaseIconSize(this)" onmouseout="decreaseIconSize(this)"><img src="../assets/website.png" alt=""/>
+        <h2>Make It Your Own</h2>
+        <p>Ready to be customized for your needs!</p>
+      </div>
+    </section>
+    <section class="featureDetailsSection">
+      <div class="featureDetail"><img src="../assets/ipad.jpg" alt="image of an ipad"/>
+        <div class="featureTextContainer">   
+          <h2>Fully Responsive Design</h2>
+          <p>Using this template guarantees that your client will receive a great experience on any device screen size.</p>
+        </div>
+      </div>
+      <div class="featureDetail"><img src="../assets/computer.jpg" alt="Image of html code"/>
+        <div class="featureTextContainer">   
+          <h2>Built Using Modern CSS</h2>
+          <p>This template was built using a new feature of CSS: flexbox.</p>
+        </div>
+      </div>
+      <div class="featureDetail"><img src="../assets/workplace.jpg" alt="Image of a work place"/>
+        <div class="featureTextContainer">   
+          <h2>Ready For Your Needs</h2>
+          <p>This template is ready to be customized. All images and text can be changed.</p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonialsSection">
+      <h2>What people are saying...</h2>
+      <div class="testimonial"><img src="../assets/kirk.png" alt="Image of a woman"/>
+        <h3>Kirk S.</h3>
+        <p>'I have used it to create hundreds of successful landing pages.'</p>
+      </div>
+      <div class="testimonial"><img src="../assets/jessica.png" alt="Image of a woman"/>
+        <h3>Jessica P.</h3>
+        <p>&quot;Built using modern tools!&quot;&quot;</p>
+      </div>
+      <div class="testimonial"><img src="../assets/jack.png" alt="Image of a man"/>
+        <h3>Jack T.</h3>
+        <p>&quot;Thank you for making this highly customizable!&quot;&quot;</p>
+      </div>
+    </section>
+    <section class="signUpSection bottomSignUpSection">
+      <h2>Ready to get started? Sign up now!</h2>
+      <div class="inputSection">      
+        <input type="email" placeholder="Enter your email...">
+        <button class="btn">Sign Up!</button>
+      </div>
+    </section>
+    <footer>
+      <ul class="links">
+        <li>About</li>
+        <li>Contact</li>
+        <li>Terms Of Use</li>
+        <li>Privacy Policy</li>
+      </ul>
+      <p>Your Website 2019. All rights reserved.</p>
+      <ul class="socialIcons"><img src="../assets/facebook.png" alt="Facebook Icon"><img src="../assets/twitter.png" alt="Twitter Icon"><img src="../assets/pinterest.png" alt="Pinterest Icon"></ul>
+      <div class="attribution">Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik from<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com. is licensed by </a><a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></a></div>
+    </footer>
+  </body>
+</html>

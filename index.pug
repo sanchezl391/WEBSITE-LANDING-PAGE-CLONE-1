@@ -1,0 +1,145 @@
+script.
+    function increaseIconSize(e){ 
+        let c = e.childNodes;
+        c[0].style = 'width: 80px;';         
+    }
+    function decreaseIconSize(e){ 
+        let c = e.childNodes;
+        c[0].style = 'width: 70px;';         
+    }
+mixin featureOverview(data)
+    div(class='featureOverview',  onmouseover="increaseIconSize(this)", onmouseout="decreaseIconSize(this)")
+        img(src=data.imgLocation, alt=data.imgAlt)
+        h2= data.header
+        p= data.bodyText
+
+mixin featureDetail(data)
+    .featureDetail
+        img(src=data.imgLocation, alt=data.imgAlt)
+        .featureTextContainer    
+            h2= data.header
+            p= data.bodyText
+mixin testimonial(data)
+    .testimonial
+        img(src=data.imgLocation, alt=data.imgAlt)
+        h3= data.name
+        p= data.quote
+
+doctype html
+html
+    head
+        link(rel="stylesheet", href="../index.css")
+        link(href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet")
+    body
+        header  
+            h1.pageTitle Email List Template
+            button.btn Sign In
+        section.signUpSection
+            h2 Build your own landing page and generate more leads!
+            .inputSection       
+                input(type="email" placeholder="Enter your email...")
+                button.btn Sign Up!
+
+        section
+            - 
+                const featureOverview1 = 
+                    {
+                        imgLocation: '../assets/mobile-app.png', 
+                        imgAlt: 'image of a phone', 
+                        header: 'Fully Responsive', 
+                        bodyText: 'This template will look great on any screen!'
+                    };
+                const featureOverview2 = 
+                    {
+                        imgLocation: '../assets/checklist.png', 
+                        imgAlt: '', 
+                        header: 'Modern CSS', 
+                        bodyText: 'Built with the new CSS flexbox!'
+                    };
+                const featureOverview3 = 
+                    {
+                        imgLocation: '../assets/website.png', 
+                        imgAlt: '', 
+                        header: 'Make It Your Own', 
+                        bodyText: 'Ready to be customized for your needs!'
+                    };
+            + featureOverview(featureOverview1)
+            + featureOverview(featureOverview2)
+            + featureOverview(featureOverview3)
+
+        section.featureDetailsSection
+            -
+                const detailedFeature1 = 
+                    {
+                        imgLocation: '../assets/ipad.jpg', 
+                        imgAlt: 'image of an ipad', 
+                        header: 'Fully Responsive Design', 
+                        bodyText: 'Using this template guarantees that your client will receive a great experience on any device screen size.'
+                    };
+                const detailedFeature2 = 
+                    {
+                        imgLocation: '../assets/computer.jpg', 
+                        imgAlt: 'Image of html code', 
+                        header: 'Built Using Modern CSS', 
+                        bodyText: 'This template was built using a new feature of CSS: flexbox.'
+                    };
+                const detailedFeature3 = 
+                    {
+                        imgLocation: '../assets/workplace.jpg', 
+                        imgAlt: 'Image of a work place', 
+                        header: 'Ready For Your Needs', 
+                        bodyText: 'This template is ready to be customized. All images and text can be changed.'
+                    };
+            + featureDetail(detailedFeature1)
+            + featureDetail(detailedFeature2)
+            + featureDetail(detailedFeature3)
+        section.testimonialsSection
+            h2 What people are saying...
+            - 
+                const testimonial1 = 
+                    {
+                        imgLocation: '../assets/kirk.png', 
+                        imgAlt: 'Image of a woman', 
+                        name: 'Kirk S.', 
+                        quote: "'I have used it to create hundreds of successful landing pages.'"
+                    };
+                const testimonial2 = 
+                    {
+                        imgLocation: '../assets/jessica.png', 
+                        imgAlt: 'Image of a woman', 
+                        name: 'Jessica P.', 
+                        quote: '"Built using modern tools!""'
+                    };
+                const testimonial3 = 
+                    {
+                        imgLocation: '../assets/jack.png', 
+                        imgAlt: 'Image of a man', 
+                        name: 'Jack T.', 
+                        quote: '"Thank you for making this highly customizable!""'
+                    };
+            + testimonial(testimonial1)
+            + testimonial(testimonial2)
+            + testimonial(testimonial3)
+        section(class='signUpSection bottomSignUpSection')
+            h2 Ready to get started? Sign up now!
+            .inputSection       
+                input(type="email" placeholder="Enter your email...")
+                button.btn Sign Up!
+        footer
+            ul.links
+                li About
+                li Contact
+                li Terms Of Use
+                li Privacy Policy
+            p Your Website 2019. All rights reserved.
+            ul.socialIcons
+                img(src="../assets/facebook.png", alt="Facebook Icon")
+                img(src="../assets/twitter.png", alt="Twitter Icon")
+                img(src="../assets/pinterest.png", alt="Pinterest Icon")
+
+            div.attribution Icons made by 
+                a(href="https://www.flaticon.com/authors/monkik" title="monkik") monkik from
+                    a(href="https://www.flaticon.com/" title="Flaticon") www.flaticon.com. is licensed by 
+                    a(href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank") CC 3.0 BY
+
+
