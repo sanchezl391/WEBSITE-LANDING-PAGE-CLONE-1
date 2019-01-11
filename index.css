@@ -221,39 +221,145 @@ ul.links{
 
 /* media queries */
 @media only screen and (min-width: 0px) {
+    .featureOverview img{
+        width: 200px;
+    }
+
+    header .pageTitle{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 60px;
+    }
+    .featureOverview p, p{
+        font-size: 50px;
+    }
+
     .signUpSection h2{
-        font-size: 35px;
+        font-size: 60px;
     }
 
     .signUpSection .inputSection{
         flex-direction: column;
-        height: 100px;
+        height: 150px;
     }
     .inputSection input, .inputSection .btn {
-        font-size: 18px;
+        font-size: 40px;
         padding: 0 5px;
     }
 
-    .inputSection input{
-        box-sizing: border-box;
-    }
     .inputSection .btn{
         margin-left: 0;
     }
     
     .bottomSignUpSection{
-        min-height: 400px;
+        min-height: 600px;
+        padding: 40px;
     }
 
     .bottomSignUpSection h2{
-        font-size: 30px;
+        font-size: 70px;
     }
 
     ul.links{
         flex-wrap: wrap;
+        font-size: 40px;
     }
+
+    footer p {
+        font-size: 30px;
+    }
+    .socialIcons img{
+        width: 100px;
+    }
+
 }
 
 @media only screen and (min-width: 769px) {
-    
+    header .pageTitle {
+        font-size: 25px;
+    }
+    .signUpSection .inputSection{
+        flex-direction: row;
+        height: 60px;
+        width: 60%;
+    }
+
+    .inputSection input{
+        margin-right: 8px;
+    }
+    .inputSection input, .inputSection .btn{
+        font-size: 25px;
+    }
+
+    .featureOverview{
+        margin: 20px;
+    }
+    .featureOverviewSection {
+        display:flex;
+        justify-content: center;
+    }
+
+    .featureDetail:nth-child(2){
+        flex-direction: row-reverse;
+    }
+    .featureOverviewSection img{
+        width: 80px;
+    }
+    .featureOverviewSection h2{
+        font-size: 30px;
+    }
+    .featureOverviewSection p{
+        font-size: 25px;
+    }
+    .featureDetail {
+        flex-direction: row;
+    }
+
+    .featureDetail .featureTextContainer{
+        padding: 40px;
+        margin: 0;
+    }
+    .featureDetail .featureTextContainer h2{
+        font-size: 35px;
+    }
+    .featureDetail .featureTextContainer p{
+        font-size: 30px;
+    }
+
+    .featureDetail img, .featureDetail .featureTextContainer{
+        width: 50%;
+    }
+    .testimonialsSection {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .testimonial {
+        margin: 0 40px;
+    }
+    .testimonialsSection h2 {
+        flex: 0 0 100%;
+        text-align: center;
+        font-size: 40px;
+    }
+    .testimonial p{
+        font-size: 20px;
+    }
+    .bottomSignUpSection {
+        min-height: 400px;
+    }
+    .bottomSignUpSection h2{
+        font-size: 35px;
+    }
+    footer li{
+        font-size: 20px;
+    }
+    footer p, .attribution {
+        font-size: 15px;    
+    }
+    ul.socialIcons img {
+        width: 40px;
+    }
 }
