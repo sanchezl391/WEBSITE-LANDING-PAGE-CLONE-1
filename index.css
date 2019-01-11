@@ -218,3 +218,42 @@ ul.links{
 .attribution {
     margin-top: 50px;
 }
+
+/* media queries */
+@media only screen and (min-width: 0px) {
+    .signUpSection h2{
+        font-size: 35px;
+    }
+
+    .signUpSection .inputSection{
+        flex-direction: column;
+        height: 100px;
+    }
+    .inputSection input, .inputSection .btn {
+        font-size: 18px;
+        padding: 0 5px;
+    }
+
+    .inputSection input{
+        box-sizing: border-box;
+    }
+    .inputSection .btn{
+        margin-left: 0;
+    }
+    
+    .bottomSignUpSection{
+        min-height: 400px;
+    }
+
+    .bottomSignUpSection h2{
+        font-size: 30px;
+    }
+
+    ul.links{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    
+}
